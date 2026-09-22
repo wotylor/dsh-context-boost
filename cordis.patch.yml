@@ -1,0 +1,6 @@
+# dsh-context-boost bundle layer.
+# Mounted when the profile's package.json lists dsh-context-boost in
+# dsh.profile.bundles; the loader resolves `name` from the profile's node_modules.
+- insert:
+    - id: dsh-context-boost
+      name: dsh-context-boost

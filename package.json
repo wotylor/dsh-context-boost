@@ -1,0 +1,34 @@
+{
+  "name": "dsh-context-boost",
+  "version": "1.0.0",
+  "description": "Extend the per-conversation context capacity of DeepSeek Harness. Reads $DSH_HOME/dsh-context-boost.json and applies its contextWindow / maxTokens to the llm-deepseek provider, with hot reload.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "context",
+    "context-window",
+    "contextWindow",
+    "maxTokens"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

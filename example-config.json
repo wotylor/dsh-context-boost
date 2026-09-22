@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "contextWindow": 4000000,
+  "maxTokens": 262144,
+  "models": {
+    "deepseek-flash": 8000000
+  }
+}
